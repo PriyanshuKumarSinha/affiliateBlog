@@ -57,7 +57,7 @@ function changeTheme(){
     if(currentTheme === 'light'){
         makeBackgroundDark();
         makeHeadingsWhite();
-        // makeIconsWhite();
+        
         makeMenuLinksWhite();
         makeNavDark();
         makeParaTextWhite();
@@ -66,6 +66,10 @@ function changeTheme(){
         if(window.innerWidth <= 650){
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(14, 14, 22)"
             document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(14, 14, 22)"
+        }
+        else{
+        makeIconsWhite();
+
         }
         document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3F3D56');
 
@@ -142,14 +146,10 @@ function makeIconsWhite(){
 
 function makeIconsDefault(){
     iconList[0].style.color = "#716aec"
-    iconList[1].style.color = colour
-
-    if (window.innerWidth <= 650){
-        iconList[1].style.color = "#716aec"
-    }
+    iconList[1].style.color = "#716aec"
 
     for (let i = 2; i < iconList.length; i++) {
-        iconList[i].style.color = colour
+        iconList[i].style.color = "colour"
     }
 }
 
