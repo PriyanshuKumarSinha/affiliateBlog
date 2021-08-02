@@ -103,6 +103,7 @@ nav div.ham img {
   }
   nav div.links {
     display: none;
+    padding: 10px 25px;
   }
   nav div.ham {
     display: -webkit-box;
