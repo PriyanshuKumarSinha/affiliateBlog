@@ -131,9 +131,9 @@ function paddingTopContainer(){
     document.querySelector(".container").style.paddingTop = nav.offsetHeight+20 + 'px'
 }
 function makeShadowLight(){
-    nav.style.boxShadow = "-1px 11px 7px -4px rgb(233, 233, 233)"
+    nav.style.boxShadow = "-1px 11px 7px -4px rgb(230, 230, 230)"
 }
 function makeShadowDark(){
-    nav.style.boxShadow = "-1px 11px 7px -4px rgb(28, 27, 41)"
+    nav.style.boxShadow = "-1px 11px 7px -4px rgb(26, 25, 39)"
 }
 paddingTopContainer();
