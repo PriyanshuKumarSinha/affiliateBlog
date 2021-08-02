@@ -116,7 +116,7 @@ function makeIconsWhite(){
 
 function makeIconsDefault(){
     for (let i = 0; i < iconList.length; i++) {
-        iconList[i].style.color = "#2F2E41"
+        iconList[i].style.color = "#716aec"
     }
 }
 
