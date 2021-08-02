@@ -114,5 +114,8 @@ nav div.ham img {
     display: block;
     text-align: center;
   }
+  nav li {
+    padding: 2px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
