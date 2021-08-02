@@ -112,7 +112,8 @@ function makeMenuLinksWhite(){
 function makeMenuLinksDefault(){
     if(window.innerWidth <= 650){
     menuList[0].style.color = "#716aec"
-
+    iconList[1].style.color = colour
+    
     }
     else{
         menuList[0].style.color = "#3F3D56"
