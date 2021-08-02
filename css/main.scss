@@ -64,7 +64,7 @@ nav{
 }
 
 .container{
-    padding: 50px 250px;
+    padding: 50px 200px;
     text-align: justify;
 }
 
@@ -81,7 +81,7 @@ nav{
         }
     }
     .container{
-        padding: 50px 220px;
+        padding: 50px 150px;
         text-align: justify;
     }
     
@@ -98,7 +98,7 @@ nav{
         }
     }
     .container{
-        padding: 50px 200px;
+        padding: 50px 100px;
         text-align: justify;
     }
 }
@@ -126,9 +126,19 @@ nav{
 
     }
     .container{
-        padding: 50px 150px;
+        padding: 50px 50px;
         text-align: justify;
     }
 }
+@media only screen and (max-width: 500px) {
+    nav{
+        min-width: 86.5%;
+    }
+    .container{
+        
+        padding: 50px 25px;
+    }
+}
+
 
 
