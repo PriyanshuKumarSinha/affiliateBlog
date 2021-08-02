@@ -84,7 +84,7 @@ function changeTheme(){
         makeIconsWhite();
 
         }
-        document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3F3D56');
+        // document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3F3D56');
 
 
     }
