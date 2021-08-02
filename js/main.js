@@ -92,3 +92,9 @@ function makeBackgroundDark(){
 function makeBackgroundLight(){
     document.querySelector('body').style.backgroundColor = "rgb(248, 248, 248)"
 }
+
+function paddingTopContainer(){
+    document.querySelector(".container").style.paddingTop = document.querySelector('nav').offsetHeight + 'px'
+}
+
+paddingTopContainer();

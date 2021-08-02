@@ -69,7 +69,7 @@ nav div.ham img {
 }
 
 .container {
-  padding: 50px 200px;
+  padding: 0 200px;
   text-align: justify;
 }
 
@@ -85,7 +85,7 @@ nav div.ham img {
     width: 70%;
   }
   .container {
-    padding: 50px 150px;
+    padding: 0 150px;
     text-align: justify;
   }
 }
@@ -101,7 +101,7 @@ nav div.ham img {
     width: 80%;
   }
   .container {
-    padding: 50px 100px;
+    padding: 0 100px;
     text-align: justify;
   }
 }
@@ -131,7 +131,7 @@ nav div.ham img {
     padding: 2px 0;
   }
   .container {
-    padding: 50px 50px;
+    padding: 0px 50px;
     text-align: justify;
   }
 }
@@ -141,7 +141,7 @@ nav div.ham img {
     min-width: 86.5%;
   }
   .container {
-    padding: 50px 25px;
+    padding: 0px 25px;
   }
 }
 /*# sourceMappingURL=main.css.map */
