@@ -4,6 +4,8 @@ let menuLinks = document.querySelector('.links');
 let spanList = document.querySelectorAll('span')
 let iconList = document.querySelectorAll('i')
 let menuList = document.querySelectorAll('.menu')
+let paragraphList = document.querySelectorAll('p')
+
 let colour = 'rgb(224, 223, 223)'
 let currentTheme = 'light';
 
@@ -36,6 +38,9 @@ function changeTheme(){
         makeHeadingsWhite();
         makeIconsWhite();
         makeMenuLinksWhite();
+        makeNavDark();
+        makeParaTextWhite();
+        makeShadowDark()
         currentTheme = 'dark'
     }
     else{
@@ -43,8 +48,29 @@ function changeTheme(){
         makeHeadingsDefault();
         makeIconsDefault();
         makeMenuLinksDefault();
+        makeNavDefault();
+        makeParaTextDefault();
+        makeShadowLight()
+
         currentTheme = 'light'
     }
+}
+function makeParaTextWhite(){
+    for (let i = 0; i < paragraphList.length; i++) {
+        paragraphList[i].style.color = colour
+    }
+}
+function makeParaTextDefault(){
+    for (let i = 0; i < paragraphList.length; i++) {
+        paragraphList[i].style.color = "#2F2E41"
+    }
+}
+ 
+function makeNavDark(){
+    document.querySelector('nav').style.backgroundColor = 'rgb(29, 28, 42)';
+}
+function makeNavDefault(){
+    document.querySelector('nav').style.backgroundColor = 'rgb(248, 248, 248)';
 }
 
 function makeMenuLinksWhite(){
@@ -94,7 +120,12 @@ function makeBackgroundLight(){
 }
 
 function paddingTopContainer(){
-    document.querySelector(".container").style.paddingTop = document.querySelector('nav').offsetHeight + 'px'
+    document.querySelector(".container").style.paddingTop = document.querySelector('nav').offsetHeight+20 + 'px'
 }
-
+function makeShadowLight(){
+    document.querySelector('nav').style.boxShadow = "-1px 11px 14px 0px rgb(233, 233, 233)"
+}
+function makeShadowDark(){
+    document.querySelector('nav').style.boxShadow = "-1px 11px 14px 0px rgb(25, 24, 36)"
+}
 paddingTopContainer();
