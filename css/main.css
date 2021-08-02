@@ -14,8 +14,8 @@ a {
 }
 
 nav {
-  -webkit-box-shadow: -1px 11px 7px -4px whitesmoke;
-          box-shadow: -1px 11px 7px -4px whitesmoke;
+  -webkit-box-shadow: -1px 11px 7px -4px #f3f3f3;
+          box-shadow: -1px 11px 7px -4px #f3f3f3;
   padding: 50px 150px;
   background-color: #f8f8f8;
   position: fixed;
