@@ -110,8 +110,13 @@ function makeMenuLinksWhite(){
 }
 
 function makeMenuLinksDefault(){
-    menuList[0].style.color = "#3F3D56"
+    if(window.innerWidth <= 650){
+    menuList[0].style.color = "#716aec"
 
+    }
+    else{
+        menuList[0].style.color = "#3F3D56"
+    }
     for (let i = 1; i < menuList.length; i++) {
         menuList[i].style.color = "#716aec"
     }
