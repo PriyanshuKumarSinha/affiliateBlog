@@ -99,7 +99,7 @@ function makeParaTextDefault(){
 }
  
 function makeNavDark(){
-    nav.style.backgroundColor = 'rgb(3, 3, 5)';
+    nav.style.backgroundColor = 'rgb(16, 16, 24)';
 }
 function makeNavDefault(){
     nav.style.backgroundColor = 'rgb(248, 248, 248)';
