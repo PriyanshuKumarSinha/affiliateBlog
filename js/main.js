@@ -111,7 +111,12 @@ function makeParaTextDefault(){
 }
  
 function makeNavDark(){
-    nav.style.backgroundColor = 'rgb(16, 16, 24)';
+    if (window.innerWidth > 650) {
+        nav.style.backgroundColor = "rgb(29, 28, 42)"
+    }
+    else{
+        nav.style.backgroundColor = "rgb(16, 16, 24)"
+    }
 }
 function makeNavDefault(){
     nav.style.backgroundColor = 'rgb(248, 248, 248)';
@@ -166,7 +171,12 @@ function makeHeadingsWhite(){
 }
 
 function makeBackgroundDark(){
-    document.querySelector('body').style.backgroundColor = "rgb(16, 16, 24)"
+    if (window.innerWidth > 650) {
+        document.querySelector('body').style.backgroundColor = "rgb(29, 28, 42)"
+    }
+    else{
+        document.querySelector('body').style.backgroundColor = "rgb(16, 16, 24)"
+    }
 }
 
 function makeBackgroundLight(){
@@ -180,6 +190,11 @@ function makeShadowLight(){
     nav.style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
 }
 function makeShadowDark(){
-    nav.style.boxShadow = "-1px 11px 7px -4px rgb(14, 14, 22)"
+    if (window.innerWidth > 650) {
+        nav.style.boxShadow = "-1px 11px 7px -4px rgb(27, 26, 41)"
+    }
+    else{
+        nav.style.boxShadow = "-1px 11px 7px -4px rgb(16, 16, 24)"
+    }
 }
 paddingTopContainer();
