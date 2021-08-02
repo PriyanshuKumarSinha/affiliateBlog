@@ -59,6 +59,7 @@ function changeTheme(){
         makeShadowDark()
         currentTheme = 'dark'
         document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(27, 26, 40)"
+        document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3F3D56');
 
 
     }
@@ -71,6 +72,7 @@ function changeTheme(){
         makeParaTextDefault();
         makeShadowLight()
         document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
+        document.querySelector('meta[name="theme-color"]').setAttribute("content", '#716aec');
 
         currentTheme = 'light'
     }
