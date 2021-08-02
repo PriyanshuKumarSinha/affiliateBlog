@@ -123,7 +123,12 @@ function makeNavDefault(){
 }
 
 function makeMenuLinksWhite(){
-    menuList[0].style.color = "#716aec"
+    if (window.innerWidth > 650) {
+        menuList[0].style.color = colour
+    }
+    else{
+        menuList[0].style.color = "#716aec"
+    }
 
     for (let i = 1; i < menuList.length; i++) {
         menuList[i].style.color = colour
