@@ -93,6 +93,7 @@ function makeNav2Default(){
     for (let i = 0; i < menu2List.length; i++) {
         menu2List[i].style.color = colour
     }
+
 }
 function makeParaTextWhite(){
     for (let i = 0; i < paragraphList.length; i++) {
@@ -141,10 +142,14 @@ function makeIconsWhite(){
 
 function makeIconsDefault(){
     iconList[0].style.color = "#716aec"
-    iconList[1].style.color = "#716aec"
+    iconList[1].style.color = colour
+
+    if (window.innerWidth <= 650){
+        iconList[1].style.color = "#716aec"
+    }
 
     for (let i = 2; i < iconList.length; i++) {
-        iconList[i].style.color = "colour"
+        iconList[i].style.color = colour
     }
 }
 
