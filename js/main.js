@@ -90,7 +90,7 @@ function changeTheme(){
 }
 function makeNav2Default(){
     let menu2List = document.querySelectorAll('.menu2')
-    for (let i = 1; i < menu2List.length; i++) {
+    for (let i = 0; i < menu2List.length; i++) {
         menu2List[i].style.color = colour
     }
 }
