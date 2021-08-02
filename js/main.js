@@ -37,7 +37,7 @@ function changeMenuSymbol(cls){
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
         }
         else{
-            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(15, 15, 23)"
+            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(14, 14, 22)"
         }
 
     }
@@ -64,8 +64,8 @@ function changeTheme(){
         makeShadowDark()
         currentTheme = 'dark'
         if(window.innerWidth <= 650){
-            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(15, 15, 23)"
-            document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(15, 15, 23)"
+            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(14, 14, 22)"
+            document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(14, 14, 22)"
         }
         document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3F3D56');
 
@@ -133,8 +133,11 @@ function makeIconsWhite(){
 }
 
 function makeIconsDefault(){
-    for (let i = 0; i < iconList.length; i++) {
-        iconList[i].style.color = "#716aec"
+    iconList[0].style.color = "#716aec"
+    iconList[1].style.color = "#716aec"
+
+    for (let i = 2; i < iconList.length; i++) {
+        iconList[i].style.color = "colour"
     }
 }
 
@@ -165,6 +168,6 @@ function makeShadowLight(){
     nav.style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
 }
 function makeShadowDark(){
-    nav.style.boxShadow = "-1px 11px 7px -4px rgb(15, 15, 23)"
+    nav.style.boxShadow = "-1px 11px 7px -4px rgb(14, 14, 22)"
 }
 paddingTopContainer();
