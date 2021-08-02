@@ -56,7 +56,7 @@ function changeTheme(){
 
     if(currentTheme === 'light'){
         makeBackgroundDark();
-        // makeHeadingsWhite();
+        makeHeadingsWhite();
         // makeIconsWhite();
         makeMenuLinksWhite();
         makeNavDark();
@@ -106,7 +106,9 @@ function makeNavDefault(){
 }
 
 function makeMenuLinksWhite(){
-    for (let i = 0; i < menuList.length; i++) {
+    menuList[0].style.color = "#716aec"
+
+    for (let i = 1; i < menuList.length; i++) {
         menuList[i].style.color = colour
     }
 }
