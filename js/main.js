@@ -56,8 +56,8 @@ function changeTheme(){
 
     if(currentTheme === 'light'){
         makeBackgroundDark();
-        makeHeadingsWhite();
-        makeIconsWhite();
+        // makeHeadingsWhite();
+        // makeIconsWhite();
         makeMenuLinksWhite();
         makeNavDark();
         makeParaTextWhite();
