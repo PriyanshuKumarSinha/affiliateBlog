@@ -90,6 +90,7 @@ nav{
 }
 @media only screen and (max-width: 600px) {
     nav{
+        display: block;
         div.logo{    
             width: 100%;
         }
@@ -98,6 +99,10 @@ nav{
         }
         div.ham{
             display: flex;
+        }
+        ul{
+            display: block;
+            text-align: center;
         }
 
     }
