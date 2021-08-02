@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+*{
+    // removing all default extra space 
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    // change the background colour and set font to fira sans
+    background-color: rgb(248, 248, 248);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+// remove all text decoration from hyperlink
+a{
+    text-decoration: none;
+}
+.container1{
+    width: 100%;
+}
+nav{
+    padding: 25px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    // make logo and link div flexbox 
+    display: flex;
+    font-size: 20px;
+    a{
+        color: #716aec;
+    }
+    a:hover{
+        color: #3F3D56;
+    }
+    // remove all text decoration from list
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+    // make them look good
+    div.logo{
+        display: flex;
+        a{
+            color: #3F3D56;
+            font-weight: bold;
+        }
+
+        width: 40%;
+    }
+    div.links{
+        width: 60%;
+    }
+    div.ham{
+        display: none;
+        margin-left: auto;
+        img{
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+
+.container{
+    padding: 50px 250px;
+}
+
+@media only screen and (max-width: 800px) {
+    nav{
+        font-size: 19px;
+        div.logo{    
+            width: 30%;
+        }
+        div.links{
+            width: 70%;
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    nav{
+        div.logo{    
+            width: 20%;
+        }
+        div.links{
+            width: 80%;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    nav{
+        div.logo{    
+            width: 100%;
+        }
+        div.links{
+            display: none;
+        }
+        div.ham{
+            display: flex;
+        }
+
+    }
+}
+
+

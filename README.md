@@ -1,1 +1,1 @@
-# affiliateBlog
+# myWebsite
