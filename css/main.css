@@ -75,13 +75,14 @@ nav div.ham img {
   position: fixed;
   bottom: 0;
   left: 0;
+  background-color: #716aec;
   width: 100%;
   display: none;
   font-size: 10px;
 }
 
 .nav2 a {
-  color: #716aec;
+  color: #241db1e1;
 }
 
 .nav2 a:hover {
@@ -105,6 +106,7 @@ nav div.ham img {
 }
 
 .nav2 ul li i {
+  color: #f8f8f8;
   font-size: 14px;
 }
 
