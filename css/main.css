@@ -75,12 +75,8 @@ nav div.ham img {
   position: fixed;
   bottom: 0;
   left: 0;
-  -webkit-box-shadow: -1px -11px 7px -4px #f3f3f3;
-          box-shadow: -1px -11px 7px -4px #f3f3f3;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   font-size: 10px;
 }
 
@@ -199,6 +195,11 @@ nav div.ham img {
   }
   nav li {
     padding: 2px 0;
+  }
+  .nav2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .container {
     padding: 0px 50px;

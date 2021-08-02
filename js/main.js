@@ -8,6 +8,9 @@ let nav = document.querySelector('nav')
 let colour = 'rgb(224, 223, 223)'
 let currentTheme = 'light';
 
+//sets shadow for nav2
+document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(243, 243, 243)"
+
 window.onresize = changeNavWidth;
 changeNavWidth()
 function changeNavWidth(){
@@ -58,7 +61,10 @@ function changeTheme(){
         makeParaTextWhite();
         makeShadowDark()
         currentTheme = 'dark'
-        document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(27, 26, 40)"
+        if(window.innerWidth <= 650){
+            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(27, 26, 40)"
+            document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(27, 26, 40)"
+        }
         document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3F3D56');
 
 
@@ -71,7 +77,10 @@ function changeTheme(){
         makeNavDefault();
         makeParaTextDefault();
         makeShadowLight()
-        document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
+        if(window.innerWidth <= 650){
+            document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(243, 243, 243)"
+            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
+        }
         document.querySelector('meta[name="theme-color"]').setAttribute("content", '#716aec');
         currentTheme = 'light'
     }
