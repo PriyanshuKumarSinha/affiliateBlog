@@ -16,7 +16,7 @@ changeNavWidth()
 function changeNavWidth(){
     if (window.innerWidth <= 650){
         document.querySelector('.logo').style.width = window.innerWidth -((parseInt(window.getComputedStyle(document.querySelector('.logo')).paddingLeft) * 2) + 2)  +'px'
-        iconList[iconList.length -1].style.color = colour
+        iconList[iconList.length -1].style.color = 'rgb(248, 248, 248)'
 
     }
     else{
