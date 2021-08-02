@@ -84,6 +84,10 @@ nav div.ham img {
   nav div.links {
     width: 70%;
   }
+  .container {
+    padding: 50px 220px;
+    text-align: justify;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -95,6 +99,10 @@ nav div.ham img {
   }
   nav div.links {
     width: 80%;
+  }
+  .container {
+    padding: 50px 200px;
+    text-align: justify;
   }
 }
 
@@ -121,6 +129,10 @@ nav div.ham img {
   }
   nav li {
     padding: 2px 0;
+  }
+  .container {
+    padding: 50px 150px;
+    text-align: justify;
   }
 }
 /*# sourceMappingURL=main.css.map */

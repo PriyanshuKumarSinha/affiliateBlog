@@ -80,6 +80,11 @@ nav{
             width: 70%;
         }
     }
+    .container{
+        padding: 50px 220px;
+        text-align: justify;
+    }
+    
 }
 @media only screen and (max-width: 700px) {
     nav{
@@ -91,6 +96,10 @@ nav{
         div.links{
             width: 80%;
         }
+    }
+    .container{
+        padding: 50px 200px;
+        text-align: justify;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -115,6 +124,10 @@ nav{
             padding: 2px 0;
         }
 
+    }
+    .container{
+        padding: 50px 150px;
+        text-align: justify;
     }
 }
 
