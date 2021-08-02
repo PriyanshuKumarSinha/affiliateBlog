@@ -112,7 +112,7 @@ function makeHeadingsWhite(){
 }
 
 function makeBackgroundDark(){
-    document.querySelector('body').style.backgroundColor = "rgb(29, 28, 42)"
+    document.querySelector('body').style.backgroundColor = "rgb(28, 27, 41)"
 }
 
 function makeBackgroundLight(){
@@ -123,9 +123,9 @@ function paddingTopContainer(){
     document.querySelector(".container").style.paddingTop = document.querySelector('nav').offsetHeight+20 + 'px'
 }
 function makeShadowLight(){
-    document.querySelector('nav').style.boxShadow = "-1px 11px 14px 0px rgb(233, 233, 233)"
+    document.querySelector('nav').style.boxShadow = "-1px 11px 7px -4px rgb(233, 233, 233)"
 }
 function makeShadowDark(){
-    document.querySelector('nav').style.boxShadow = "-1px 11px 14px 0px rgb(25, 24, 36)"
+    document.querySelector('nav').style.boxShadow = "-1px 11px 7px -4px rgb(28, 27, 41)"
 }
 paddingTopContainer();
