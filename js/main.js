@@ -73,7 +73,6 @@ function changeTheme(){
         makeShadowLight()
         document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
         document.querySelector('meta[name="theme-color"]').setAttribute("content", '#716aec');
-
         currentTheme = 'light'
     }
 }

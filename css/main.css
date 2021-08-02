@@ -148,7 +148,7 @@ nav div.ham img {
     display: flex;
   }
   nav ul {
-    padding-bottom: 50px;
+    padding: 50px 0px;
     display: block;
     text-align: center;
   }
