@@ -7,9 +7,17 @@ let paragraphList = document.querySelectorAll('p')
 let nav = document.querySelector('nav')
 let colour = 'rgb(224, 223, 223)'
 let currentTheme = 'light';
+var d = new Date();
 
-//sets shadow for nav2
-document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(243, 243, 243)"
+// check time
+var time = d.getHours();
+
+
+// set default theme
+if(time<4 || time> 10){
+    changeTheme();
+}
+
 
 window.onresize = changeNavWidth;
 changeNavWidth()
