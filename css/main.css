@@ -13,12 +13,11 @@ a {
   text-decoration: none;
 }
 
-.container1 {
-  width: 100%;
-}
-
 nav {
   padding: 25px;
+  min-width: 95%;
+  background-color: #f8f8f8;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,10 +70,12 @@ nav div.ham img {
 
 .container {
   padding: 50px 250px;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 800px) {
   nav {
+    min-width: 93%;
     font-size: 19px;
   }
   nav div.logo {
@@ -86,6 +87,9 @@ nav div.ham img {
 }
 
 @media only screen and (max-width: 700px) {
+  nav {
+    min-width: 92%;
+  }
   nav div.logo {
     width: 20%;
   }
@@ -96,6 +100,7 @@ nav div.ham img {
 
 @media only screen and (max-width: 600px) {
   nav {
+    min-width: 90%;
     display: block;
   }
   nav div.logo {
