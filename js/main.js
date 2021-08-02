@@ -1,14 +1,22 @@
-console.log(window.innerWidth)
 let menuIcon = document.querySelector('#menuIcon'); //ham icon (bars and cross)
 let menuLinks = document.querySelector('.links'); 
 let spanList = document.querySelectorAll('span')
 let iconList = document.querySelectorAll('i')
 let menuList = document.querySelectorAll('.menu')
 let paragraphList = document.querySelectorAll('p')
-
+let nav = document.querySelector('nav')
 let colour = 'rgb(224, 223, 223)'
 let currentTheme = 'light';
 
+window.onresize = changeNavWidth;
+changeNavWidth()
+function changeNavWidth(){
+    if (window.innerWidth <= 650){
+        document.querySelector('.logo').style.width = window.innerWidth -((parseInt(window.getComputedStyle(document.querySelector('.logo')).paddingLeft) * 2) + 2)  +'px'
+    }
+    else{
+    nav.style.width = window.innerWidth -((parseInt(window.getComputedStyle(nav).paddingLeft) * 2) + 2)  +'px'
+}}
 
 function ham(cls){
     changeMenuSymbol(cls);
@@ -67,10 +75,10 @@ function makeParaTextDefault(){
 }
  
 function makeNavDark(){
-    document.querySelector('nav').style.backgroundColor = 'rgb(29, 28, 42)';
+    nav.style.backgroundColor = 'rgb(29, 28, 42)';
 }
 function makeNavDefault(){
-    document.querySelector('nav').style.backgroundColor = 'rgb(248, 248, 248)';
+    nav.style.backgroundColor = 'rgb(248, 248, 248)';
 }
 
 function makeMenuLinksWhite(){
@@ -120,12 +128,12 @@ function makeBackgroundLight(){
 }
 
 function paddingTopContainer(){
-    document.querySelector(".container").style.paddingTop = document.querySelector('nav').offsetHeight+20 + 'px'
+    document.querySelector(".container").style.paddingTop = nav.offsetHeight+20 + 'px'
 }
 function makeShadowLight(){
-    document.querySelector('nav').style.boxShadow = "-1px 11px 7px -4px rgb(233, 233, 233)"
+    nav.style.boxShadow = "-1px 11px 7px -4px rgb(233, 233, 233)"
 }
 function makeShadowDark(){
-    document.querySelector('nav').style.boxShadow = "-1px 11px 7px -4px rgb(28, 27, 41)"
+    nav.style.boxShadow = "-1px 11px 7px -4px rgb(28, 27, 41)"
 }
 paddingTopContainer();
