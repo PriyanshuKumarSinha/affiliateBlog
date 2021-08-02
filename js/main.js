@@ -16,6 +16,8 @@ changeNavWidth()
 function changeNavWidth(){
     if (window.innerWidth <= 650){
         document.querySelector('.logo').style.width = window.innerWidth -((parseInt(window.getComputedStyle(document.querySelector('.logo')).paddingLeft) * 2) + 2)  +'px'
+        iconList[iconList.length -1].style.color = colour
+
     }
     else{
     nav.style.width = window.innerWidth -((parseInt(window.getComputedStyle(nav).paddingLeft) * 2) + 2)  +'px'
@@ -112,7 +114,6 @@ function makeMenuLinksWhite(){
 function makeMenuLinksDefault(){
     if(window.innerWidth <= 650){
     menuList[0].style.color = "#716aec"
-    iconList[1].style.color = colour
     
     }
     else{
