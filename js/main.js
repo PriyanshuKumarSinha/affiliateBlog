@@ -23,6 +23,19 @@ function changeNavWidth(){
     nav.style.width = window.innerWidth -((parseInt(window.getComputedStyle(nav).paddingLeft) * 2) + 2)  +'px'
 }}
 
+document.addEventListener('keydown',(event) => {
+    var name = event.key;
+    var code = event.code;
+    if (name === 'Control') {
+      // Do nothing.
+      return;
+    }
+    if (event.ctrlKey & (name ==='q' || name ==='Q')) {
+      changeTheme(currentTheme);
+    } 
+  }, false);
+
+
 function ham(cls){
     changeMenuSymbol(cls);
 }
