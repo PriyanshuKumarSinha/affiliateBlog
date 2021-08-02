@@ -116,7 +116,7 @@ nav div.ham img {
 
 .container {
   margin-top: 5px;
-  padding: 1000px 200px;
+  padding: 0px 150px;
   text-align: justify;
 }
 
@@ -132,7 +132,7 @@ nav div.ham img {
   }
   .container {
     margin-top: 5px;
-    padding: 0px 100px;
+    padding: 0px 150px;
     text-align: justify;
   }
 }
@@ -150,7 +150,7 @@ nav div.ham img {
   }
   .container {
     margin-top: 5px;
-    padding: 0 150px;
+    padding: 0 80px;
     text-align: justify;
   }
 }
@@ -209,7 +209,8 @@ nav div.ham img {
   }
   .container {
     margin-top: 5px;
-    padding: 0px 50px;
+    font-size: 15px;
+    padding: 0px 30px;
     text-align: justify;
   }
 }
