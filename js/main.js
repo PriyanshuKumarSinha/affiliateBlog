@@ -50,7 +50,7 @@ function changeMenuSymbol(cls){
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
         }
         else{
-            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(14, 14, 22)"
+            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(15, 15, 23)"
         }
 
     }
@@ -77,8 +77,8 @@ function changeTheme(){
         makeShadowDark()
         currentTheme = 'dark'
         if(window.innerWidth <= 650){
-            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(14, 14, 22)"
-            document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(14, 14, 22)"
+            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(15, 15, 23)"
+            document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(15, 15, 23)"
         }
         else{
         makeIconsWhite();
