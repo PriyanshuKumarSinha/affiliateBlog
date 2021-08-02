@@ -151,7 +151,7 @@ function makeHeadingsWhite(){
 }
 
 function makeBackgroundDark(){
-    document.querySelector('body').style.backgroundColor = "rgb(28, 27, 41)"
+    document.querySelector('body').style.backgroundColor = "rgb(16, 16, 24)"
 }
 
 function makeBackgroundLight(){
