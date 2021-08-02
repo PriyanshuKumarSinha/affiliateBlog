@@ -28,6 +28,12 @@ function changeMenuSymbol(cls){
         menuIcon.setAttribute('class','fas fa-times');
         // make menu visible
         menuLinks.style.display = 'block';
+        if (currentTheme === 'light'){
+            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
+        }
+        else{
+            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(27, 26, 40)"
+        }
 
     }
     else{
@@ -35,6 +41,8 @@ function changeMenuSymbol(cls){
         menuIcon.setAttribute('class','fas fa-bars')    
         //hides menu
         menuLinks.style.display = 'none';
+        document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = ""
+
     }
 }
 
@@ -50,6 +58,9 @@ function changeTheme(){
         makeParaTextWhite();
         makeShadowDark()
         currentTheme = 'dark'
+        document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(27, 26, 40)"
+
+
     }
     else{
         makeBackgroundLight();
@@ -59,6 +70,7 @@ function changeTheme(){
         makeNavDefault();
         makeParaTextDefault();
         makeShadowLight()
+        document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
 
         currentTheme = 'light'
     }
