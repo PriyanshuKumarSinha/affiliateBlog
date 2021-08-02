@@ -79,12 +79,19 @@ function changeTheme(){
         makeNavDefault();
         makeParaTextDefault();
         makeShadowLight()
+        makeNav2Default();
         if(window.innerWidth <= 650){
             document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(243, 243, 243)"
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
         }
         document.querySelector('meta[name="theme-color"]').setAttribute("content", '#716aec');
         currentTheme = 'light'
+    }
+}
+function makeNav2Default(){
+    let menu2List = document.querySelectorAll('')
+    for (let i = 1; i < menu2List.length; i++) {
+        menu2List[i].style.color = colour
     }
 }
 function makeParaTextWhite(){
