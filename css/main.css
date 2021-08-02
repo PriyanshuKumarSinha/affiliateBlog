@@ -75,6 +75,8 @@ nav div.ham img {
   position: fixed;
   bottom: 0;
   left: 0;
+  -webkit-box-shadow: -1px -11px 7px -4px #f3f3f3;
+          box-shadow: -1px -11px 7px -4px #f3f3f3;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
