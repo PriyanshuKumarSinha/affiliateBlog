@@ -230,9 +230,12 @@ paddingTopContainer();
 
 
 //slideshow
-sliderDivList[0].style.height = window.innerHeight-270 + 'px';
 if (window.innerWidth < 650){
-    sliderDivList[0].style.height = window.innerHeight-150 + 'px';
+    sliderDivList[0].style.height = window.innerHeight-240 + 'px';
+}
+else{
+    sliderDivList[0].style.height = window.innerHeight-270 + 'px';
+
 }
 isHovered = document.querySelector('.container').querySelector(':hover')
 // // window.addEventListener('mousemove', checkHover(),false)
