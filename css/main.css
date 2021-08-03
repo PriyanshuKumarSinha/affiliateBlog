@@ -119,6 +119,10 @@ span {
   position: relative;
 }
 
+.contactDiv {
+  padding: 0px 150px;
+}
+
 .container {
   margin-top: 2px;
   padding: 0px 150px;
@@ -278,6 +282,9 @@ span {
   nav div.links {
     width: 70%;
   }
+  .contactDiv {
+    padding: 0px 80px;
+  }
   .container {
     margin-top: 5px;
     padding: 0 80px;
@@ -293,6 +300,9 @@ span {
   }
   nav div.links {
     width: 60%;
+  }
+  .contactDiv {
+    padding: 0px 50px;
   }
   .container {
     margin-top: 5px;
@@ -335,6 +345,9 @@ span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .contactDiv {
+    padding: 0px 30px;
   }
   .container {
     margin-top: 5px;
@@ -421,6 +434,9 @@ span {
 }
 
 @media only screen and (max-width: 500px) {
+  .contactDiv {
+    padding: 0px 25px;
+  }
   .container {
     margin-top: 5px;
     padding: 0px 25px;
@@ -437,6 +453,9 @@ span {
 }
 
 @media only screen and (max-width: 400px) {
+  .contactDiv {
+    padding: 0px 20px;
+  }
   .container .headerSlider {
     padding: 6px 20px;
     width: 88%;
