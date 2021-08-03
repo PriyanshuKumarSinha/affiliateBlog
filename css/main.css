@@ -199,7 +199,9 @@ span {
 .postsContainer .couple div {
   margin-bottom: 30px;
   padding: 8px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 95%;
   text-align: left;
   font-size: 10px;
@@ -226,6 +228,10 @@ span {
   width: 100%;
 }
 
+.postsContainer .couple div div.blogTitle {
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
   nav {
     font-size: 19px;
@@ -242,6 +248,9 @@ span {
   }
   .container .headerSlider {
     padding: 30px;
+  }
+  .postsContainer .couple div {
+    display: inline-block;
   }
 }
 
@@ -321,7 +330,7 @@ span {
     padding: 0px 30px;
   }
   .container .headerSlider {
-    padding: 10px 30px;
+    padding: 0px 0px;
   }
   .headerSlider {
     -webkit-box-shadow: 10px 10px 10px 0px #f3f3f3, -10px -10px 10px 0px #f3f3f3, -10px 10px 10px 0px #f3f3f3, 10px -10px 10px 0px #f3f3f3;
@@ -330,7 +339,7 @@ span {
     display: inline-block;
   }
   .headerSlider div {
-    padding: 17px 0;
+    padding: 8px;
   }
   .headerSlider div.blogTitle {
     width: 100%;
@@ -378,6 +387,12 @@ span {
   .postsContainer .headerSlider p {
     font-size: 12px;
   }
+  .hideThisTag {
+    display: none;
+  }
+  div.blogTitle {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -389,12 +404,21 @@ span {
     padding: 8px 30px;
     width: 85%;
   }
+  .hideThisTag {
+    display: none;
+  }
+  div.blogTitle {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .container .headerSlider {
     padding: 6px 20px;
     width: 88%;
+  }
+  .hideThisTag {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

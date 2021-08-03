@@ -181,7 +181,7 @@ span{
             margin-bottom: 30px;
             
             padding: 8px;
-            display: inline-block;
+            display: flex;
             width : 95%;
             text-align: left;
             font-size: 10px;
@@ -202,6 +202,9 @@ span{
                     width: 100%;
                 }
         
+            }
+            div.blogTitle{
+                display: none;
             }
             
         }
@@ -227,6 +230,14 @@ span{
             padding: 30px;
         }
     }
+.postsContainer{
+
+    .couple{
+        div{
+            display: inline-block;
+        }
+    }
+}
     
 }
 @media only screen and (max-width: 800px) {
@@ -264,6 +275,7 @@ span{
     }
 }
 @media only screen and (max-width: 650px) {
+
     nav{
         padding: 0;
         display: block;
@@ -304,7 +316,7 @@ span{
         font-size: 15px;
         padding: 0px 30px;
         .headerSlider{
-            padding: 10px 30px;
+            padding: 0px 0px;
         }
     }
     .headerSlider{
@@ -312,12 +324,15 @@ span{
         width: 88%;
         display: inline-block;
         div{
-            padding: 17px 0;
+            padding: 8px;
+
+            // padding: 17px 0;
         }
         div.blogTitle{
             width: 100%;
             // text-align: center;
         }
+ 
         div.blogImage{
             width: 100%;
             text-align: center;
@@ -366,6 +381,13 @@ span{
         }
         
     }
+    .hideThisTag{
+        display: none;
+
+    }
+    div.blogTitle{
+        display: none;
+    }
 }
 @media only screen and (max-width: 500px) {
     .container{
@@ -376,6 +398,13 @@ span{
             width: 85%;
         }
     }
+    .hideThisTag{
+        display: none;
+
+    }
+    div.blogTitle{
+        display: none;
+    }
 }
 @media only screen and (max-width: 400px) {
     .container{
@@ -384,6 +413,11 @@ span{
             width: 88%;
         }
     }
+    .hideThisTag{
+        display: none;
+
+    }
+
 }
 
 
