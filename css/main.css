@@ -267,6 +267,8 @@ span {
     padding: 10px 30px;
   }
   .headerSlider {
+    -webkit-box-shadow: 10px 10px 10px 0px #f3f3f3, -10px -10px 10px 0px #f3f3f3, -10px 10px 10px 0px #f3f3f3, 10px -10px 10px 0px #f3f3f3;
+            box-shadow: 10px 10px 10px 0px #f3f3f3, -10px -10px 10px 0px #f3f3f3, -10px 10px 10px 0px #f3f3f3, 10px -10px 10px 0px #f3f3f3;
     width: 88%;
     display: inline-block;
   }

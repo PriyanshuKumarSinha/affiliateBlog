@@ -108,6 +108,8 @@ function changeTheme(){
         if(window.innerWidth <= 650){
             document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(243, 243, 243)"
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
+            sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243 243), -10px 10px 10px 0px  rgb(243, 243 243), 10px -10px 10px 0px  rgb(243, 243 243) '    
+
         }
         else{
 
@@ -253,7 +255,7 @@ function changePadding(){
 
         }
     } else {
-        sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243, 243), -10px 10px 10px 0px  rgb(243, 243, 243), 10px -10px 10px 0px  rgb(243, 243, 243) '
+        sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(241, 241, 241), -10px -10px 10px 0px  rgb(241, 241, 241), -10px 10px 10px 0px  rgb(241, 241, 241), 10px -10px 10px 0px  rgb(241, 241, 241)'
     }
 
     
