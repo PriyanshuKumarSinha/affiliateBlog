@@ -56,7 +56,7 @@ function changeMenuSymbol(cls){
         // make menu visible
         menuLinks.style.display = 'block';
         if (currentTheme === 'light'){
-            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
+            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(238, 238, 238)"
         }
         else{
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(13, 13, 21)"
@@ -110,9 +110,9 @@ function changeTheme(){
         }
 
         if(window.innerWidth <= 650){
-            document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(243, 243, 243)"
-            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
-            sliderDivList[0].style.boxShadow = '10px 10px 10px 0px  rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243 243), -10px 10px 10px 0px  rgb(243, 243 243), 10px -10px 10px 0px  rgb(243, 243 243) '    
+            document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(238, 238, 238)"
+            document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(238, 238, 238)"
+            sliderDivList[0].style.boxShadow = '10px 10px 10px 0px  rgb(238, 238, 238), -10px -10px 10px 0px  rgb(243, 243 243), -10px 10px 10px 0px  rgb(243, 243 243), 10px -10px 10px 0px  rgb(243, 243 243) '    
 
         }
         else{
@@ -217,7 +217,7 @@ function paddingTopContainer(){
     document.querySelector(".container").style.paddingTop = nav.offsetHeight+20 + 'px'
 }
 function makeShadowLight(){
-    nav.style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
+    nav.style.boxShadow = "-1px 11px 7px -4px rgb(238, 238, 238)"
 }
 function makeShadowDark(){
     if (window.innerWidth > 650) {
@@ -264,7 +264,7 @@ function changePadding(){
 
         }
     } else {
-        sliderDivList[0].style.boxShadow = '10px 10px 10px 0px  rgb(241, 241, 241), -10px -10px 10px 0px  rgb(241, 241, 241), -10px 10px 10px 0px  rgb(241, 241, 241), 10px -10px 10px 0px  rgb(241, 241, 241)'
+        sliderDivList[0].style.boxShadow = '10px 10px 10px 0px  rgb(238, 238, 238), -10px -10px 10px 0px  rgb(238, 238, 238), -10px 10px 10px 0px  rgb(238, 238, 238), 10px -10px 10px 0px  rgb(238, 238, 238)'
     }
 
     
