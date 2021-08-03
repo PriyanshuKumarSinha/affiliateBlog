@@ -85,17 +85,17 @@ function changeTheme(){
         makeParaTextWhite();
         makeShadowDark()
         currentTheme = 'dark'
+        sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(27, 26, 41), -10px -10px 10px 0px  rgb(27, 26, 41), -10px 10px 10px 0px  rgb(27, 26, 41), 10px -10px 10px 0px  rgb(27, 26, 41) '   
         if(window.innerWidth <= 650){
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(13, 13, 21)"
             document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(13, 13, 21)"
         }
         else{
         makeIconsWhite();
+        sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(27, 26, 41), -10px -10px 10px 0px  rgb(27, 26, 41), -10px 10px 10px 0px  rgb(27, 26, 41), 10px -10px 10px 0px  rgb(27, 26, 41) '      
 
+        
         }
-        // document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3F3D56');
-
-
     }
     else{
         makeBackgroundLight();
@@ -106,6 +106,7 @@ function changeTheme(){
         makeParaTextDefault();
         makeShadowLight()
         makeNav2Default();
+        sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245) '    
         if(window.innerWidth <= 650){
             document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(243, 243, 243)"
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
@@ -249,7 +250,12 @@ function changePadding(){
     container.style.paddingRight = sliderDivPaddingRight - 5 +'px';
     container.style.marginTop = '5px';
     container.style.marginBottom = '5px'; 
-    sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243, 243), -10px 10px 10px 0px  rgb(243, 243, 243), 10px -10px 10px 0px  rgb(243, 243, 243) '
+    if (currentTheme === 'dark') {
+        sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(25, 24, 39), -10px -10px 10px 0px  rgb(25, 24, 39), -10px 10px 10px 0px  rgb(25, 24, 39), 10px -10px 10px 0px  rgb(25, 24, 39)'        
+    } else {
+        sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243, 243), -10px 10px 10px 0px  rgb(243, 243, 243), 10px -10px 10px 0px  rgb(243, 243, 243) '
+    }
+
     
 
 }
@@ -259,7 +265,14 @@ function normalPadding(){
     container.style.paddingRight = sliderDivPaddingRight  +'px'; 
     container.style.marginTop = '2px';
     container.style.marginBottom = '0px'; 
-    sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245) '
+
+    if (currentTheme === 'dark') {
+        sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(27, 26, 41), -10px -10px 10px 0px  rgb(27, 26, 41), -10px 10px 10px 0px  rgb(27, 26, 41), 10px -10px 10px 0px  rgb(27, 26, 41) '      
+    } else {
+        sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245) '    
+    }
+
+
 
 
 }
