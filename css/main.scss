@@ -65,6 +65,10 @@ nav{
         }
     }
 }
+span{
+    font-weight: bold;
+    font-size: 20px;
+}
 .nav2{
     position: fixed;
     bottom: 0;
@@ -110,7 +114,23 @@ nav{
     margin-top: 2px;
 
     padding: 0px 150px;
+    span{
+        color: #716aec;
+
+    }
+    #tags{
+        background-color: #716aec;
+        color: rgb(245, 245, 245);
+        font-size: 12px;
+        padding: 2px;
+
+    }
+    p{
     text-align: justify;
+
+        color: #8280a1;
+
+    }
 }
 
 
@@ -134,6 +154,9 @@ nav{
         width: 60%;
         text-align: right;
     }
+    .title2{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -150,7 +173,9 @@ nav{
     .container{
         margin-top: 5px;
         padding: 0px 150px;
-        text-align: justify;
+        .headerSlider{
+            padding: 30px;
+        }
     }
     
 }
@@ -169,7 +194,6 @@ nav{
         margin-top: 5px;
 
         padding: 0 80px;
-        text-align: justify;
     }
     
 }
@@ -226,15 +250,54 @@ nav{
     }
     .container{
         margin-top: 5px;
+        margin-bottom: 150px;
         font-size: 15px;
         padding: 0px 30px;
-        text-align: justify;
+        .headerSlider{
+            padding: 10px 30px;
+        }
+    }
+    .headerSlider{
+        width: 88%;
+        display: inline-block;
+        div{
+            padding: 17px 0;
+        }
+        div.blogTitle{
+            width: 100%;
+            // text-align: center;
+        }
+        div.blogImage{
+            width: 100%;
+            text-align: center;
+        }
+        .title{
+            display: none;
+        }
+        .title2{
+            display: block;
+        }
+        p{
+            font-size: 12px;
+        }
     }
 }
 @media only screen and (max-width: 500px) {
     .container{
         margin-top: 5px;      
         padding: 0px 25px;
+        .headerSlider{
+            padding: 8px 30px;
+            width: 85%;
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    .container{
+        .headerSlider{
+            padding: 6px 20px;
+            width: 88%;
+        }
     }
 }
 

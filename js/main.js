@@ -232,6 +232,9 @@ paddingTopContainer();
 //slideshow
 let sliderDiv = document.querySelector('.headerSlider');
 sliderDiv.style.height = window.innerHeight-270 + 'px';
+if (window.innerWidth < 650){
+    sliderDiv.style.height = window.innerHeight-150 + 'px';
+}
 isHovered = document.querySelector('.container').querySelector(':hover')
 // // window.addEventListener('mousemove', checkHover(),false)
 
