@@ -115,9 +115,34 @@ nav div.ham img {
 }
 
 .container {
-  margin-top: 5px;
+  margin-top: 2px;
   padding: 0px 150px;
   text-align: justify;
+}
+
+.headerSlider {
+  -webkit-box-shadow: 10px 10px 10px 0px whitesmoke, -10px -10px 10px 0px whitesmoke, -10px 10px 10px 0px whitesmoke, 10px -10px 10px 0px whitesmoke;
+          box-shadow: 10px 10px 10px 0px whitesmoke, -10px -10px 10px 0px whitesmoke, -10px 10px 10px 0px whitesmoke, 10px -10px 10px 0px whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+}
+
+.headerSlider img {
+  width: 80%;
+}
+
+.headerSlider div.blogTitle {
+  width: 40%;
+}
+
+.headerSlider div.blogImage {
+  width: 60%;
+  text-align: right;
 }
 
 @media only screen and (max-width: 900px) {

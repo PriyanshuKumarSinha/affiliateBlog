@@ -9,12 +9,13 @@ let colour = 'rgb(224, 223, 223)'
 let currentTheme = 'light';
 var d = new Date();
 
+
 // check time
 var time = d.getHours();
 
 
 // set default theme
-if(time<4 || time> 10){
+if(time<4 || time> 21){
     changeTheme();
 }
 
@@ -224,3 +225,41 @@ function makeShadowDark(){
     }
 }
 paddingTopContainer();
+
+
+
+//slideshow
+let sliderDiv = document.querySelector('.headerSlider');
+sliderDiv.style.height = window.innerHeight-270 + 'px';
+isHovered = document.querySelector('.container').querySelector(':hover')
+// // window.addEventListener('mousemove', checkHover(),false)
+
+// document.addEventListener("mousemove", checkHover());
+
+// document.onmousemove = checkHover;
+
+let container = document.querySelector('.container')
+
+let sliderDivPaddingLeft = parseInt(window.getComputedStyle(container).paddingLeft);
+let sliderDivPaddingRight = parseInt(window.getComputedStyle(container).paddingRight);
+
+
+function changePadding(){
+    container.style.paddingLeft = sliderDivPaddingLeft - 5 +'px';
+    container.style.paddingRight = sliderDivPaddingRight - 5 +'px';
+    container.style.marginTop = '5px';
+    container.style.marginBottom = '5px'; 
+    sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243, 243), -10px 10px 10px 0px  rgb(243, 243, 243), 10px -10px 10px 0px  rgb(243, 243, 243) '
+    
+
+}
+
+function normalPadding(){
+    container.style.paddingLeft = sliderDivPaddingLeft  +'px';
+    container.style.paddingRight = sliderDivPaddingRight  +'px'; 
+    container.style.marginTop = '2px';
+    container.style.marginBottom = '0px'; 
+    sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245) '
+
+
+}

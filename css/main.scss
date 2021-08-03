@@ -5,6 +5,7 @@
     margin: 0;
 }
 
+
 body{
     // change the background colour and set font to fira sans
     background-color: rgb(248, 248, 248);
@@ -106,10 +107,33 @@ nav{
     position: relative;
 }
 .container{
-    margin-top: 5px;
+    margin-top: 2px;
 
     padding: 0px 150px;
     text-align: justify;
+}
+
+
+//slideshow
+.headerSlider{
+    box-shadow: 10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245);
+    // -10px 10px 10px 0px  rgb(243, 243, 243), 10px -10px 10px 0px  rgb(243, 243, 243);
+
+    // border: solid 1px black;
+    display: flex;
+    // margin: auto;
+    align-items: center;
+    padding: 50px;
+    img{
+        width: 80%;
+    }
+    div.blogTitle{
+        width: 40%;
+    }
+    div.blogImage{
+        width: 60%;
+        text-align: right;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -208,8 +232,6 @@ nav{
     }
 }
 @media only screen and (max-width: 500px) {
-    nav{
-    }
     .container{
         margin-top: 5px;      
         padding: 0px 25px;
