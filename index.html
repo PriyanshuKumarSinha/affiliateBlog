@@ -24,9 +24,9 @@
             
             <div class = "links">
                 <ul>
-                    <li><a href= "#aboutDiv" class = 'menu'>Trending</a></li>
-                    <li><a href= "#projectsDiv"class = 'menu'>Stories</a></li>
-                    <li><a href= "#skillsDiv"class = 'menu'>Posts</a></li>
+                    <li><a href= "#trending" class = 'menu'>Trending</a></li>
+                    <li><a href= "#stories"class = 'menu'>Stories</a></li>
+                    <!-- <li><a href= "#skillsDiv"class = 'menu'>Posts</a></li> -->
                     <li><a href= "#contactDiv"class = 'menu'>Contact</a></li>
                     <li><i class="fas fa-adjust" id= "darktheme" style = 'color: #716aec;' onclick="changeTheme()"></i></li>
                 </ul>
@@ -34,20 +34,20 @@
         </nav>
         <div class="nav2">
             <ul>
-                <li><a href= "#aboutDiv" class = 'menu2'><i class="fas fa-bolt"></i> <br><br>Trending</a></li>
-                <li><a href= "#projectsDiv"class = 'menu2'><i class="far fa-comment-alt"></i> <br><br>Stories</a></li>
-                <li><a href= "#skillsDiv"class = 'menu2'><i class="far fa-bookmark"></i> <br><br>Posts</a></li>
+                <li><a href= "#trending" class = 'menu2'><i class="fas fa-bolt"></i> <br><br>Trending</a></li>
+                <li><a href= "#stories"class = 'menu2'><i class="far fa-comment-alt"></i> <br><br>Stories</a></li>
+                <!-- <li><a href= "#skillsDiv"class = 'menu2'><i class="far fa-bookmark"></i> <br><br>Posts</a></li> -->
                 <li><a href= "#contactDiv"class = 'menu2'><i class="fas fa-address-book"></i> <br><br>Contact</a></li>
                 <li><a href="#" class = 'menu2'style = 'color: rgb(248, 248, 248)'><i class="fas fa-adjust" id= "darktheme" style = 'color: rgb(248, 248, 248);' onclick="changeTheme()"></i><br><br>Dark Theme</a></li>
             </ul>
         </div>
     </div>
+    <a id="trending"></a>
     
     <div class="container">
         <div class="headerSlider" onmouseover = "changePadding()" onmouseout="normalPadding()">
             <!-- //slideshow (to be done) -->
             <!-- //latest post -->
-
             <div class="blogTitle">
                 <span id = 'tags' class="hideThisTag">&nbsp;INFORMATION&nbsp;</span><br><br>
 
@@ -60,11 +60,18 @@
                 </div>
             </div>
             <div class="blogImage">
+
                 <img src="./img/3.jpg" >
+
             </div>
+
             <div class="title2">
+
                 <span id = 'tags' class="hideThisTag2">&nbsp;INFORMATION&nbsp;</span><br><br>
+                <a id="stories"></a>
+
                 <span>CBSE CLASS 10 RESULTS DECLARED</span><br><br>
+
                 <p>
                     CBSE class 10th Result 2021 LIVE Updates: The Central Board of Secondary Education (CBSE) class 10 results declared.
                 </p>
@@ -72,15 +79,22 @@
             
         </div>
     </div>
-    <div class="container postsContainer" style="margin-top: 50px;">
+
+
+<div class="container postsContainer" style="margin-top: 50px;">
 
         <div class="couple">
+            <span id="story" class="story1">STORIES</span><i class="far fa-arrow-alt-circle-right" id="story1Icon"style="color :'#716aec';font-size: 20px;"></i><br><br>
+
                     <!-- 1 -->
         <div class="headerSlider" ">
+            <span id="story"class="story2">STORIES</span><i class="far fa-arrow-alt-circle-right" id="story2Icon"style="color :'#716aec';font-size: 20px;"></i><br><br>
+
             <!-- //slideshow (to be done) -->
             <!-- //latest post -->
 
             <div class="blogTitle">
+
                 <span id = 'tags' class="hideThisTag">&nbsp;INFORMATION&nbsp;</span><br><br>
 
                 <div class="title">
@@ -197,6 +211,8 @@
 
 </div>
 </div>
+
+
 <div class="container postsContainer" style="margin-top: 50px;">
 
     <div class="couple">

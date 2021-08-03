@@ -232,6 +232,19 @@ span {
   display: none;
 }
 
+#story {
+  font-size: 20px;
+  padding: 15px 10px;
+}
+
+.story2 {
+  display: none;
+}
+
+#story2Icon {
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
   nav {
     font-size: 19px;
@@ -392,6 +405,18 @@ span {
   }
   div.blogTitle {
     display: none;
+  }
+  .story1 {
+    display: none;
+  }
+  .story2 {
+    display: inline-block;
+  }
+  #story1Icon {
+    display: none;
+  }
+  #story2Icon {
+    display: unset;
   }
 }
 
