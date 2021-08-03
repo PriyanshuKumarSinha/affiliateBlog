@@ -26,7 +26,6 @@ changeNavWidth()
 function changeNavWidth(){
     if (window.innerWidth <= 650){
         document.querySelector('.logo').style.width = window.innerWidth -((parseInt(window.getComputedStyle(document.querySelector('.logo')).paddingLeft) * 2) + 2)  +'px'
-        iconList[iconList.length -1].style.color = 'rgb(248, 248, 248)'
 
     }
     else{
@@ -146,7 +145,9 @@ function makeNavDark(){
         nav.style.backgroundColor = "rgb(29, 28, 42)"
     }
     else{
-        nav.style.backgroundColor = "rgb(16, 16, 24)"
+        nav.style.backgroundColor = "rgb(29, 28, 42)"
+
+        // nav.style.backgroundColor = "rgb(16, 16, 24)"
     }
 }
 function makeNavDefault(){
@@ -203,7 +204,9 @@ function makeBackgroundDark(){
         document.querySelector('body').style.backgroundColor = "rgb(29, 28, 42)"
     }
     else{
-        document.querySelector('body').style.backgroundColor = "rgb(16, 16, 24)"
+        document.querySelector('body').style.backgroundColor = "rgb(29, 28, 42)"
+
+        // document.querySelector('body').style.backgroundColor = "rgb(16, 16, 24)"
     }
 }
 
