@@ -145,9 +145,8 @@ function makeNavDark(){
         nav.style.backgroundColor = "rgb(29, 28, 42)"
     }
     else{
-        nav.style.backgroundColor = "rgb(29, 28, 42)"
-
-        // nav.style.backgroundColor = "rgb(16, 16, 24)"
+        
+        nav.style.backgroundColor = "rgb(18, 18, 26)"
     }
 }
 function makeNavDefault(){
