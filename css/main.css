@@ -359,16 +359,16 @@ span {
     display: inline-block;
   }
   .postsContainer .headerSlider img {
-    width: 80%;
+    width: 100%;
   }
   .postsContainer .headerSlider div {
-    padding: 17px 30px;
+    padding: 17px 20px;
   }
   .postsContainer .headerSlider div.blogTitle {
-    width: 80%;
+    width: 100%;
   }
   .postsContainer .headerSlider div.blogImage {
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
   .postsContainer .headerSlider .title {
