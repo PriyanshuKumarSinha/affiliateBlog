@@ -78,28 +78,25 @@ function changeTheme(){
 
     if(currentTheme === 'light'){
         makeBackgroundDark();
-        makeHeadingsWhite();
-        
         makeMenuLinksWhite();
         makeNavDark();
         makeParaTextWhite();
         makeShadowDark()
         currentTheme = 'dark'
-        sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(27, 26, 41), -10px -10px 10px 0px  rgb(27, 26, 41), -10px 10px 10px 0px  rgb(27, 26, 41), 10px -10px 10px 0px  rgb(27, 26, 41) '   
         if(window.innerWidth <= 650){
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(13, 13, 21)"
             document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(13, 13, 21)"
+            sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(15, 15, 21), -10px -10px 10px 0px  rgb(15, 15, 21), -10px 10px 10px 0px  rgb(15, 15, 21), 10px -10px 10px 0px  rgb(15, 15, 21)'              
+        
         }
         else{
-        makeIconsWhite();
-        sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(27, 26, 41), -10px -10px 10px 0px  rgb(27, 26, 41), -10px 10px 10px 0px  rgb(27, 26, 41), 10px -10px 10px 0px  rgb(27, 26, 41) '      
+            makeIconsWhite();
 
-        
+            sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(27, 26, 41), -10px -10px 10px 0px  rgb(27, 26, 41), -10px 10px 10px 0px  rgb(27, 26, 41), 10px -10px 10px 0px  rgb(27, 26, 41) '              
         }
     }
     else{
         makeBackgroundLight();
-        makeHeadingsDefault();
         makeIconsDefault();
         makeMenuLinksDefault();
         makeNavDefault();
@@ -107,9 +104,13 @@ function changeTheme(){
         makeShadowLight()
         makeNav2Default();
         sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245) '    
+
         if(window.innerWidth <= 650){
             document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(243, 243, 243)"
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
+        }
+        else{
+
         }
         document.querySelector('meta[name="theme-color"]').setAttribute("content", '#716aec');
         currentTheme = 'light'
@@ -124,12 +125,12 @@ function makeNav2Default(){
 }
 function makeParaTextWhite(){
     for (let i = 0; i < paragraphList.length; i++) {
-        paragraphList[i].style.color = colour
+        paragraphList[i].style.color = '#8f8ead';
     }
 }
 function makeParaTextDefault(){
     for (let i = 0; i < paragraphList.length; i++) {
-        paragraphList[i].style.color = "#2F2E41"
+        paragraphList[i].style.color = '#8f8ead';
     }
 }
  
@@ -186,17 +187,9 @@ function makeIconsDefault(){
     }
 }
 
-function makeHeadingsDefault(){
-    for (let i = 0; i < spanList.length; i++) {
-        spanList[i].style.color = "#3F3D56"
-    }
-}
 
-function makeHeadingsWhite(){
-    for (let i = 0; i < spanList.length; i++) {
-        spanList[i].style.color = colour
-    }
-}
+
+
 
 function makeBackgroundDark(){
     if (window.innerWidth > 650) {
@@ -255,6 +248,10 @@ function changePadding(){
     container.style.marginBottom = '5px'; 
     if (currentTheme === 'dark') {
         sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(25, 24, 39), -10px -10px 10px 0px  rgb(25, 24, 39), -10px 10px 10px 0px  rgb(25, 24, 39), 10px -10px 10px 0px  rgb(25, 24, 39)'        
+        if (window.innerWidth<650){
+            sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(15, 15, 21), -10px -10px 10px 0px  rgb(15, 15, 21), -10px 10px 10px 0px  rgb(15, 15, 21), 10px -10px 10px 0px  rgb(15, 15, 21)'      
+
+        }
     } else {
         sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243, 243), -10px 10px 10px 0px  rgb(243, 243, 243), 10px -10px 10px 0px  rgb(243, 243, 243) '
     }
@@ -270,7 +267,13 @@ function normalPadding(){
     container.style.marginBottom = '0px'; 
 
     if (currentTheme === 'dark') {
+        // rgb(15, 15, 21)
+
         sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(27, 26, 41), -10px -10px 10px 0px  rgb(27, 26, 41), -10px 10px 10px 0px  rgb(27, 26, 41), 10px -10px 10px 0px  rgb(27, 26, 41) '      
+        if (window.innerWidth<650){
+            sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(15, 15, 21), -10px -10px 10px 0px  rgb(15, 15, 21), -10px 10px 10px 0px  rgb(15, 15, 21), 10px -10px 10px 0px  rgb(15, 15, 21)'      
+
+        }
     } else {
         sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245) '    
     }
