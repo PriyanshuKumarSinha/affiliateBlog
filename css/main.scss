@@ -158,7 +158,57 @@ span{
         display: none;
     }
 }
+.postsContainer{
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    // width: 100%;
 
+
+    .couple{
+        width: 100%;
+        .title{
+            display: none;
+        }
+        .title2{
+            display: block;
+        }
+        span{
+            font-size: 15px;
+        }
+        div{
+            // box-shadow: none;
+            margin-bottom: 30px;
+            
+            padding: 8px;
+            display: inline-block;
+            width : 95%;
+            text-align: left;
+            font-size: 10px;
+            div{
+                width: 100%;
+            }
+            #tags{
+                font-size: 10px;
+            }
+            p{
+                width: 95%;
+
+            }
+            div.blogImage{
+                width: 95%;
+                text-align: left;
+                img{
+                    width: 100%;
+                }
+        
+            }
+            
+        }
+    }
+
+
+}
 @media only screen and (max-width: 900px) {
     nav{
 
@@ -250,7 +300,7 @@ span{
     }
     .container{
         margin-top: 5px;
-        margin-bottom: 150px;
+        margin-bottom: 5px;
         font-size: 15px;
         padding: 0px 30px;
         .headerSlider{
@@ -281,6 +331,39 @@ span{
         p{
             font-size: 12px;
         }
+    }
+    .postsContainer{
+        display: inline-block;
+        font-size: 15px;
+        .headerSlider{
+            box-shadow: 10px 10px 10px 0px rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243, 243), -10px 10px 10px 0px  rgb(243, 243, 243), 10px -10px 10px 0px  rgb(243, 243, 243);
+            width: 100%;
+            display: inline-block;
+            img{
+                width: 80%;
+            }
+            div{
+                padding: 17px 30px;
+            }
+            div.blogTitle{
+                width: 80%;
+                // text-align: center;
+            }
+            div.blogImage{
+                width: 80%;
+                text-align: center;
+            }
+            .title{
+                display: none;
+            }
+            .title2{
+                display: block;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        
     }
 }
 @media only screen and (max-width: 500px) {

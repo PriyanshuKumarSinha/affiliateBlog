@@ -169,6 +169,63 @@ span {
   display: none;
 }
 
+.postsContainer {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.postsContainer .couple {
+  width: 100%;
+}
+
+.postsContainer .couple .title {
+  display: none;
+}
+
+.postsContainer .couple .title2 {
+  display: block;
+}
+
+.postsContainer .couple span {
+  font-size: 15px;
+}
+
+.postsContainer .couple div {
+  margin-bottom: 30px;
+  padding: 8px;
+  display: inline-block;
+  width: 95%;
+  text-align: left;
+  font-size: 10px;
+}
+
+.postsContainer .couple div div {
+  width: 100%;
+}
+
+.postsContainer .couple div #tags {
+  font-size: 10px;
+}
+
+.postsContainer .couple div p {
+  width: 95%;
+}
+
+.postsContainer .couple div div.blogImage {
+  width: 95%;
+  text-align: left;
+}
+
+.postsContainer .couple div div.blogImage img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 900px) {
   nav {
     font-size: 19px;
@@ -259,7 +316,7 @@ span {
   }
   .container {
     margin-top: 5px;
-    margin-bottom: 150px;
+    margin-bottom: 5px;
     font-size: 15px;
     padding: 0px 30px;
   }
@@ -289,6 +346,38 @@ span {
     display: block;
   }
   .headerSlider p {
+    font-size: 12px;
+  }
+  .postsContainer {
+    display: inline-block;
+    font-size: 15px;
+  }
+  .postsContainer .headerSlider {
+    -webkit-box-shadow: 10px 10px 10px 0px #f3f3f3, -10px -10px 10px 0px #f3f3f3, -10px 10px 10px 0px #f3f3f3, 10px -10px 10px 0px #f3f3f3;
+            box-shadow: 10px 10px 10px 0px #f3f3f3, -10px -10px 10px 0px #f3f3f3, -10px 10px 10px 0px #f3f3f3, 10px -10px 10px 0px #f3f3f3;
+    width: 100%;
+    display: inline-block;
+  }
+  .postsContainer .headerSlider img {
+    width: 80%;
+  }
+  .postsContainer .headerSlider div {
+    padding: 17px 30px;
+  }
+  .postsContainer .headerSlider div.blogTitle {
+    width: 80%;
+  }
+  .postsContainer .headerSlider div.blogImage {
+    width: 80%;
+    text-align: center;
+  }
+  .postsContainer .headerSlider .title {
+    display: none;
+  }
+  .postsContainer .headerSlider .title2 {
+    display: block;
+  }
+  .postsContainer .headerSlider p {
     font-size: 12px;
   }
 }

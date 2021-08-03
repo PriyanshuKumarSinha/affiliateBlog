@@ -8,6 +8,7 @@ let nav = document.querySelector('nav')
 let colour = 'rgb(224, 223, 223)'
 let currentTheme = 'light';
 var d = new Date();
+let sliderDivList = document.querySelectorAll('.headerSlider');
 
 
 // check time
@@ -86,13 +87,15 @@ function changeTheme(){
         if(window.innerWidth <= 650){
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(13, 13, 21)"
             document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(13, 13, 21)"
-            sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(15, 15, 21), -10px -10px 10px 0px  rgb(15, 15, 21), -10px 10px 10px 0px  rgb(15, 15, 21), 10px -10px 10px 0px  rgb(15, 15, 21)'              
-        
+            for (let i = 0; i < sliderDivList.length; i++) {
+             sliderDivList[i].style.boxShadow = '10px 10px 10px 0px rgb(15, 15, 21), -10px -10px 10px 0px  rgb(15, 15, 21), -10px 10px 10px 0px  rgb(15, 15, 21), 10px -10px 10px 0px  rgb(15, 15, 21)'              
+            }
         }
         else{
             makeIconsWhite();
-
-            sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(27, 26, 41), -10px -10px 10px 0px  rgb(27, 26, 41), -10px 10px 10px 0px  rgb(27, 26, 41), 10px -10px 10px 0px  rgb(27, 26, 41) '              
+            for (let i = 0; i < sliderDivList.length; i++) {
+            sliderDivList[i].style.boxShadow = '10px 10px 10px 0px rgb(27, 26, 41), -10px -10px 10px 0px  rgb(27, 26, 41), -10px 10px 10px 0px  rgb(27, 26, 41), 10px -10px 10px 0px  rgb(27, 26, 41) '                             
+            }
         }
     }
     else{
@@ -103,12 +106,14 @@ function changeTheme(){
         makeParaTextDefault();
         makeShadowLight()
         makeNav2Default();
-        sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245) '    
+        for (let i = 0; i < sliderDivList.length; i++) {
+            sliderDivList[i].style.boxShadow = '10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245) '    
+        }
 
         if(window.innerWidth <= 650){
             document.querySelector("body > div.container1 > div > ul").style.boxShadow = "-1px -11px 7px -4px rgb(243, 243, 243)"
             document.querySelector("body > div.container1 > nav > div.logo").style.boxShadow = "-1px 11px 7px -4px rgb(243, 243, 243)"
-            sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243 243), -10px 10px 10px 0px  rgb(243, 243 243), 10px -10px 10px 0px  rgb(243, 243 243) '    
+            sliderDivList[0].style.boxShadow = '10px 10px 10px 0px  rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243 243), -10px 10px 10px 0px  rgb(243, 243 243), 10px -10px 10px 0px  rgb(243, 243 243) '    
 
         }
         else{
@@ -225,10 +230,9 @@ paddingTopContainer();
 
 
 //slideshow
-let sliderDiv = document.querySelector('.headerSlider');
-sliderDiv.style.height = window.innerHeight-270 + 'px';
+sliderDivList[0].style.height = window.innerHeight-270 + 'px';
 if (window.innerWidth < 650){
-    sliderDiv.style.height = window.innerHeight-150 + 'px';
+    sliderDivList[0].style.height = window.innerHeight-150 + 'px';
 }
 isHovered = document.querySelector('.container').querySelector(':hover')
 // // window.addEventListener('mousemove', checkHover(),false)
@@ -249,13 +253,13 @@ function changePadding(){
     container.style.marginTop = '5px';
     container.style.marginBottom = '5px'; 
     if (currentTheme === 'dark') {
-        sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(25, 24, 39), -10px -10px 10px 0px  rgb(25, 24, 39), -10px 10px 10px 0px  rgb(25, 24, 39), 10px -10px 10px 0px  rgb(25, 24, 39)'        
+        sliderDivList[0].style.boxShadow = '10px 10px 10px 0px rgb(25, 24, 39), -10px -10px 10px 0px  rgb(25, 24, 39), -10px 10px 10px 0px  rgb(25, 24, 39), 10px -10px 10px 0px  rgb(25, 24, 39)'        
         if (window.innerWidth<650){
-            sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(15, 15, 21), -10px -10px 10px 0px  rgb(15, 15, 21), -10px 10px 10px 0px  rgb(15, 15, 21), 10px -10px 10px 0px  rgb(15, 15, 21)'      
+            sliderDivList[0].style.boxShadow = '10px 10px 10px 0px rgb(15, 15, 21), -10px -10px 10px 0px  rgb(15, 15, 21), -10px 10px 10px 0px  rgb(15, 15, 21), 10px -10px 10px 0px  rgb(15, 15, 21)'      
 
         }
     } else {
-        sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(241, 241, 241), -10px -10px 10px 0px  rgb(241, 241, 241), -10px 10px 10px 0px  rgb(241, 241, 241), 10px -10px 10px 0px  rgb(241, 241, 241)'
+        sliderDivList[0].style.boxShadow = '10px 10px 10px 0px  rgb(241, 241, 241), -10px -10px 10px 0px  rgb(241, 241, 241), -10px 10px 10px 0px  rgb(241, 241, 241), 10px -10px 10px 0px  rgb(241, 241, 241)'
     }
 
     
@@ -271,13 +275,13 @@ function normalPadding(){
     if (currentTheme === 'dark') {
         // rgb(15, 15, 21)
 
-        sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(27, 26, 41), -10px -10px 10px 0px  rgb(27, 26, 41), -10px 10px 10px 0px  rgb(27, 26, 41), 10px -10px 10px 0px  rgb(27, 26, 41) '      
+        sliderDivList[0].style.boxShadow = '10px 10px 10px 0px rgb(27, 26, 41), -10px -10px 10px 0px  rgb(27, 26, 41), -10px 10px 10px 0px  rgb(27, 26, 41), 10px -10px 10px 0px  rgb(27, 26, 41) '      
         if (window.innerWidth<650){
-            sliderDiv.style.boxShadow = '10px 10px 10px 0px rgb(15, 15, 21), -10px -10px 10px 0px  rgb(15, 15, 21), -10px 10px 10px 0px  rgb(15, 15, 21), 10px -10px 10px 0px  rgb(15, 15, 21)'      
+            sliderDivList[0].style.boxShadow = '10px 10px 10px 0px rgb(15, 15, 21), -10px -10px 10px 0px  rgb(15, 15, 21), -10px 10px 10px 0px  rgb(15, 15, 21), 10px -10px 10px 0px  rgb(15, 15, 21)'      
 
         }
     } else {
-        sliderDiv.style.boxShadow = '10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245) '    
+        sliderDivList[0].style.boxShadow = '10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245) '    
     }
 
 
