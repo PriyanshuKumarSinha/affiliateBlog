@@ -369,6 +369,13 @@ span{
         padding: 0 5px 30px 5px;
         .introduction{
             display: inline-block;
+            .mouse_scroll {
+                display: block;
+                margin: 0 auto;
+                width: 24px;
+              //   height: 100px;
+              //   margin-top: 125px;
+            }
             img{
                 width: 100%;
             }

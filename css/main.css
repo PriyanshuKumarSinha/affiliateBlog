@@ -382,6 +382,11 @@ span {
   .contentContainer .introduction {
     display: inline-block;
   }
+  .contentContainer .introduction .mouse_scroll {
+    display: block;
+    margin: 0 auto;
+    width: 24px;
+  }
   .contentContainer .introduction img {
     width: 100%;
   }

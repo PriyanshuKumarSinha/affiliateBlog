@@ -215,7 +215,9 @@ function makeBackgroundLight(){
 }
 
 function paddingTopContainer(){
-    document.querySelector(".container").style.paddingTop = nav.offsetHeight+20 + 'px'
+    if (document.querySelector(".container") !== null){
+        document.querySelector(".container").style.paddingTop = nav.offsetHeight + 20 + 'px'
+    }
 }
 function makeShadowLight(){
     nav.style.boxShadow = "-1px 11px 7px -4px rgb(238, 238, 238)"
@@ -233,24 +235,32 @@ paddingTopContainer();
 
 
 //slideshow
-if (window.innerWidth < 650){
-    sliderDivList[0].style.height = window.innerHeight-240 + 'px';
+if (sliderDivList[0] !== undefined) {
+    if (window.innerWidth < 650){
+        sliderDivList[0].style.height = window.innerHeight-240 + 'px';
+    }
+    else{
+        sliderDivList[0].style.height = window.innerHeight-270 + 'px';
+    
+    }    
 }
-else{
-    sliderDivList[0].style.height = window.innerHeight-270 + 'px';
+let isHovered;
+let container;
+if(document.querySelector('.container') !== null){
+    isHovered = document.querySelector('.container').querySelector(':hover')
+    container = document.querySelector('.container')
+    let sliderDivPaddingLeft = parseInt(window.getComputedStyle(container).paddingLeft);
+    let sliderDivPaddingRight = parseInt(window.getComputedStyle(container).paddingRight);
 
 }
-isHovered = document.querySelector('.container').querySelector(':hover')
 // // window.addEventListener('mousemove', checkHover(),false)
 
 // document.addEventListener("mousemove", checkHover());
 
 // document.onmousemove = checkHover;
 
-let container = document.querySelector('.container')
 
-let sliderDivPaddingLeft = parseInt(window.getComputedStyle(container).paddingLeft);
-let sliderDivPaddingRight = parseInt(window.getComputedStyle(container).paddingRight);
+
 
 
 function changePadding(){
