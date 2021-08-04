@@ -606,7 +606,7 @@ span{
         }
     }
     .contentContainer{
-        margin: 105px 30px;
+        margin: 105px 15px;
         padding: 0 5px 30px 5px;
         .introduction{
             display: inline-block;
@@ -729,6 +729,7 @@ span{
 }
 @media only screen and (max-width: 500px) {
     .contactDiv{
+        
         padding: 0px 25px;
     }
     .container{
