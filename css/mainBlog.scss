@@ -1,5 +1,26 @@
 .headerSlider{
     box-shadow: none;
 }
+.introduction{
+    // -10px 10px 10px 0px  rgb(243, 243, 243), 10px -10px 10px 0px  rgb(243, 243, 243);
 
+    // border: solid 1px black;
+    display: flex;
+    // margin: auto;
+    align-items: center;
+    // padding: 50px;
+    img{
+        width: 80%;
+    }
+    div.blogTitle{
+        width: 40%;
+    }
+    div.blogImage{
+        width: 60%;
+        text-align: right;
+    }
+    .title2{
+        display: none;
+    }   
+}
 
