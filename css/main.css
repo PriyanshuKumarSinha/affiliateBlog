@@ -249,6 +249,14 @@ span {
   display: none;
 }
 
+.contentContainer {
+  margin: 145px 150px;
+  text-align: justify;
+  padding: 5px 50px;
+  -webkit-box-shadow: 10px 10px 10px 0px whitesmoke, -10px -10px 10px 0px whitesmoke, -10px 10px 10px 0px whitesmoke, 10px -10px 10px 0px whitesmoke;
+          box-shadow: 10px 10px 10px 0px whitesmoke, -10px -10px 10px 0px whitesmoke, -10px 10px 10px 0px whitesmoke, 10px -10px 10px 0px whitesmoke;
+}
+
 @media only screen and (max-width: 900px) {
   nav {
     font-size: 19px;
@@ -268,6 +276,9 @@ span {
   }
   .postsContainer .couple div {
     display: inline-block;
+  }
+  .contentContainer {
+    padding: 30px;
   }
 }
 
@@ -289,6 +300,9 @@ span {
     margin-top: 5px;
     padding: 0 80px;
   }
+  .contentContainer {
+    margin: 145px 80px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -307,6 +321,9 @@ span {
   .container {
     margin-top: 5px;
     padding: 0 50px;
+  }
+  .contentContainer {
+    margin: 145px 50px;
   }
 }
 
@@ -357,6 +374,10 @@ span {
   }
   .container .headerSlider {
     padding: 0px 0px;
+  }
+  .contentContainer {
+    margin: 105px 30px;
+    padding: 0;
   }
   .headerSlider {
     -webkit-box-shadow: 10px 10px 10px 0px #f3f3f3, -10px -10px 10px 0px #f3f3f3, -10px 10px 10px 0px #f3f3f3, 10px -10px 10px 0px #f3f3f3;

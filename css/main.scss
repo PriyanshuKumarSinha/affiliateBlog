@@ -227,7 +227,12 @@ span{
 #story2Icon{
     display: none;
 }
-
+.contentContainer{
+    margin: 145px 150px;
+    text-align: justify;
+    padding: 5px 50px;
+    box-shadow: 10px 10px 10px 0px  rgb(245, 245, 245), -10px -10px 10px 0px  rgb(245, 245, 245), -10px 10px 10px 0px  rgb(245, 245, 245), 10px -10px 10px 0px  rgb(245, 245, 245);
+}
 
 
 
@@ -258,7 +263,10 @@ span{
         }
     }
 }
-    
+.contentContainer{
+    // margin: 150px;
+    padding: 30px;
+}  
 }
 @media only screen and (max-width: 800px) {
     nav{
@@ -279,6 +287,9 @@ span{
 
         padding: 0 80px;
     }
+    .contentContainer{
+        margin: 145px 80px;
+    }  
     
 }
 @media only screen and (max-width: 750px) {
@@ -299,6 +310,11 @@ span{
 
         padding: 0 50px;
     }
+    .contentContainer{
+        margin: 145px 50px;
+        // padding: 0 50px;
+    }  
+    
 }
 @media only screen and (max-width: 650px) {
 
@@ -348,6 +364,10 @@ span{
             padding: 0px 0px;
         }
     }
+    .contentContainer{
+        margin: 105px 30px;
+        padding: 0;
+    } 
     .headerSlider{
         box-shadow: 10px 10px 10px 0px rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243, 243), -10px 10px 10px 0px  rgb(243, 243, 243), 10px -10px 10px 0px  rgb(243, 243, 243);
         width: 88%;
@@ -355,10 +375,7 @@ span{
         img{
             width: 100%;
         }
-        div{
 
-            // padding: 17px 0;
-        }
         div.blogTitle{
             width: 100%;
             // text-align: center;
@@ -464,6 +481,10 @@ span{
             width: 88%;
         }
     }
+    .contentContainer{
+        // margin: 150px;
+        // padding: 6 50px;
+    } 
     .hideThisTag{
         display: none;
 
