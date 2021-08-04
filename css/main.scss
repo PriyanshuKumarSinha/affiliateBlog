@@ -366,7 +366,34 @@ span{
     }
     .contentContainer{
         margin: 105px 30px;
-        padding: 0;
+        padding: 0 5px 30px 5px;
+        .introduction{
+            display: inline-block;
+            img{
+                width: 100%;
+            }
+
+            div.blogTitle{
+                width: 100%;
+                // text-align: center;
+            }
+    
+            div.blogImage{
+                width: 100%;
+                text-align: center;
+            }
+            .title{
+                display: none;
+            }
+            .title2{
+                padding: 8px;
+
+                display: block;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
     } 
     .headerSlider{
         box-shadow: 10px 10px 10px 0px rgb(243, 243, 243), -10px -10px 10px 0px  rgb(243, 243, 243), -10px 10px 10px 0px  rgb(243, 243, 243), 10px -10px 10px 0px  rgb(243, 243, 243);

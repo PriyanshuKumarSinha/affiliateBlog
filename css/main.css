@@ -377,7 +377,30 @@ span {
   }
   .contentContainer {
     margin: 105px 30px;
-    padding: 0;
+    padding: 0 5px 30px 5px;
+  }
+  .contentContainer .introduction {
+    display: inline-block;
+  }
+  .contentContainer .introduction img {
+    width: 100%;
+  }
+  .contentContainer .introduction div.blogTitle {
+    width: 100%;
+  }
+  .contentContainer .introduction div.blogImage {
+    width: 100%;
+    text-align: center;
+  }
+  .contentContainer .introduction .title {
+    display: none;
+  }
+  .contentContainer .introduction .title2 {
+    padding: 8px;
+    display: block;
+  }
+  .contentContainer .introduction p {
+    font-size: 12px;
   }
   .headerSlider {
     -webkit-box-shadow: 10px 10px 10px 0px #f3f3f3, -10px -10px 10px 0px #f3f3f3, -10px 10px 10px 0px #f3f3f3, 10px -10px 10px 0px #f3f3f3;
