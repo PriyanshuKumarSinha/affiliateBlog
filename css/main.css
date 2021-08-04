@@ -540,7 +540,7 @@ span {
     font-size: 14px;
   }
   .contentTable ol ul {
-    padding: 15px 0;
+    padding: 0px 15px;
   }
   nav {
     padding: 0;
