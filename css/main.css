@@ -469,9 +469,17 @@ span {
   color: #CD25F1;
 }
 
-.mainContent p {
+.mainContent div {
+  padding-bottom: 30px;
+}
+
+.mainContent p, .mainContent li {
   font-size: 17px;
   padding: 5px 0px;
+}
+
+.mainContent ul {
+  padding-left: 20px;
 }
 
 @media only screen and (max-width: 900px) {
