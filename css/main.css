@@ -261,6 +261,7 @@ span {
   border: solid 1px #CD25F1;
   color: #CD25F1;
   padding: 50px 80px;
+  font-size: 17px;
 }
 
 .contentTable span {
@@ -269,7 +270,6 @@ span {
 }
 
 .contentTable ol {
-  font-size: 17px;
   padding: 30px 0;
 }
 
@@ -537,6 +537,7 @@ span {
 @media only screen and (max-width: 650px) {
   .contentTable {
     padding: 10px 35px;
+    font-size: 15px;
   }
   nav {
     padding: 0;
