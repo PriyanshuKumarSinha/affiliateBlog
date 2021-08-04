@@ -461,6 +461,19 @@ span {
   }
 }
 
+.mainContent {
+  padding: 50px 5px;
+}
+
+.mainContent span.Heading {
+  color: #CD25F1;
+}
+
+.mainContent p {
+  font-size: 17px;
+  padding: 5px 0px;
+}
+
 @media only screen and (max-width: 900px) {
   nav {
     font-size: 19px;
