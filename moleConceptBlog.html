@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/undraw_Mobile_application_mr4r.svg">
+    <meta name="theme-color" content="#716aec">
+    <title>Priyanshu Kumar Sinha</title>
+</head>
+<body>
+
+    <div class="container1">
+        
+        <!-- navbar  -->
+        <nav>
+            <div class="logo">
+                <a href= "https://priyanshukumarsinhajs.netlify.app/" id = "logo" class = 'menu'>PKS Writes</a>
+                <div class="ham">
+                    <i class="fas fa-bars" id = "menuIcon" onclick="ham(this.getAttribute('class'));"></i>
+                </div>
+            </div>
+            
+            <div class = "links">
+                <ul>
+                    <li><a href= "#trending" class = 'menu'>Trending</a></li>
+                    <li><a href= "#stories"class = 'menu'>Stories</a></li>
+                    <!-- <li><a href= "#skillsDiv"class = 'menu'>Posts</a></li> -->
+                    <li><a href= "#contact"class = 'menu'>Contact</a></li>
+                    <li><i class="fas fa-adjust" id= "darktheme" style = 'color: #716aec;' onclick="changeTheme()"></i></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="nav2">
+            <ul>
+                <li><a href= "#trending" class = 'menu2'><i class="fas fa-bolt"></i> <br><br>Trending</a></li>
+                <li><a href= "#stories"class = 'menu2'><i class="far fa-comment-alt"></i> <br><br>Stories</a></li>
+                <!-- <li><a href= "#skillsDiv"class = 'menu2'><i class="far fa-bookmark"></i> <br><br>Posts</a></li> -->
+                <li><a href= "#contact"class = 'menu2'><i class="fas fa-address-book"></i> <br><br>Contact</a></li>
+                <li><a href="#" class = 'menu2'style = 'color: rgb(248, 248, 248)'><i class="fas fa-adjust" id= "darktheme" style = 'color: rgb(248, 248, 248);' onclick="changeTheme()"></i><br><br>Dark Theme</a></li>
+            </ul>
+        </div>
+    </div>
+    <a id="trending"></a>
+    
+    <div class="container">
+        <div class="headerSlider"onmouseover = "changePadding()" onmouseout="normalPadding()">
+            <!-- //slideshow (to be done) -->
+            <!-- //latest post -->
+            <div class="blogTitle">
+                <a href="educationTagPosts">
+                    <span id = 'tags' class="hideThisTag" style="background-color :#CD25F1">&nbsp;EDUCATION&nbsp;</span><br><br>
+
+                </a>
+                <div class="title">
+                    <a href="moleConceptBlog.html">
+                        <span style="color :#CD25F1">MOLE CONCEPT</span><br><br>
+                    </a>
+                    <p>
+                        A detailed Blog on Mole Concept with Study Materials and Exercises.
+                    </p>
+                    <p >
+                        <br>
+                        <br>
+                        <div class="mouse_scroll">
+
+                            <div class="mouse">
+                                <div class="wheel"></div>
+                            </div>
+                            <div>
+                                <span class="m_scroll_arrows unu"></span>
+                                <span class="m_scroll_arrows doi"></span>
+                                <span class="m_scroll_arrows trei"></span>
+                            </div>
+                    </div>
+
+                    </p>
+                </div>
+            </div>
+            <div class="blogImage">
+
+                <img src="./img/undraw_science_fqhl (1).svg" >
+
+            </div>
+
+            <div class="title2">
+                <a href="educationTagPosts">
+                    <span id = 'tags' class="hideThisTag2"style="background-color :#CD25F1">&nbsp;EDUCATION&nbsp;</span><br><br>
+                </a>
+                <a id="stories">
+                    <a href="moleConceptBlog.html">
+                        <span style="color :#CD25F1">MOLE CONCEPT</span><br><br>
+                    </a>
+                </a>
+
+                <p>
+                    A detailed Blog on Mole Concept with Study Materials and Exercises.
+                </p>
+                <p style = "color : #CD25F1">
+                    <br>
+                    <br>
+                    <a href="moleConceptBlog.html" style = "color : #CD25F1">
+                        See article >
+                    </a>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+
+<!-- <div class="container postsContainer" style="margin-top: 50px;">
+
+        <div class="couple">
+            <span id="story" class="story1">STORIES</span><i class="far fa-arrow-alt-circle-right" id="story1Icon"style="color :'#716aec';font-size: 20px;"></i><br><br>
+
+        <div class="headerSlider" ">
+            <span id="story"class="story2">STORIES</span><i class="far fa-arrow-alt-circle-right" id="story2Icon"style="color :'#716aec';font-size: 20px;"></i><br><br>
+
+
+
+            <div class="blogTitle">
+
+                <span id = 'tags' class="hideThisTag">&nbsp;INFORMATION&nbsp;</span><br><br>
+
+                <div class="title">
+
+                    <span>CBSE CLASS 10 RESULTS DECLARED</span><br><br>
+                    <p>
+                        CBSE class 10th Result 2021 LIVE Updates: The Central Board of Secondary Education (CBSE) class 10 results declared.
+                    </p>
+                </div>
+            </div>
+            <div class="blogImage">
+                <img src="./img/1.jpg" >
+            </div>
+            <div class="title2">
+                <span id = 'tags' class="hideThisTag2">&nbsp;INFORMATION&nbsp;</span><br><br>
+
+                <span>CBSE CLASS 10 RESULTS DECLARED</span><br><br>
+                <p>
+                    CBSE class 10th Result 2021 LIVE Updates: The Central Board of Secondary Education (CBSE) class 10 results declared.
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="headerSlider" ">
+
+
+            <div class="blogTitle">
+                <span id = 'tags' class="hideThisTag">&nbsp;INFORMATION&nbsp;</span><br><br>
+
+                <div class="title">
+                    <span>CBSE CLASS 10 RESULTS DECLARED</span><br><br>
+                    <p>
+                        CBSE class 10th Result 2021 LIVE Updates: The Central Board of Secondary Education (CBSE) class 10 results declared.
+                    </p>
+                </div>
+            </div>
+            <div class="blogImage">
+                <img src="./img/2.jpg" >
+            </div>
+            <div class="title2">
+                <span id = 'tags' class="hideThisTag2">&nbsp;INFORMATION&nbsp;</span><br><br>
+
+                <span>CBSE CLASS 10 RESULTS DECLARED</span><br><br>
+                <p>
+                    CBSE class 10th Result 2021 LIVE Updates: The Central Board of Secondary Education (CBSE) class 10 results declared.
+                </p>
+            </div>
+            
+        </div>
+        </div>
+
+        <div class="couple">
+<div class="headerSlider" ">
+
+
+    <div class="blogTitle">
+        <span id = 'tags' class="hideThisTag">&nbsp;INFORMATION&nbsp;</span><br><br>
+
+        <div class="title">
+            <span>CBSE CLASS 10 RESULTS DECLARED</span><br><br>
+            <p>
+                CBSE class 10th Result 2021 LIVE Updates: The Central Board of Secondary Education (CBSE) class 10 results declared.
+            </p>
+        </div>
+    </div>
+    <div class="blogImage">
+        <img src="./img/3.jpg" >
+    </div>
+    <div class="title2">
+        <span id = 'tags' class="hideThisTag2">&nbsp;INFORMATION&nbsp;</span><br><br>
+
+        <span>CBSE CLASS 10 RESULTS DECLARED</span><br><br>
+        <p>
+            CBSE class 10th Result 2021 LIVE Updates: The Central Board of Secondary Education (CBSE) class 10 results declared.
+        </p>
+    </div>
+    
+</div>
+
+<div class="headerSlider" ">
+
+
+    <div class="blogTitle">
+        <span id = 'tags' class="hideThisTag">&nbsp;INFORMATION&nbsp;</span><br><br>
+
+        <div class="title">
+            <span>CBSE CLASS 10 RESULTS DECLARED</span><br><br>
+            <p>
+                CBSE class 10th Result 2021 LIVE Updates: The Central Board of Secondary Education (CBSE) class 10 results declared.
+            </p>
+        </div>
+    </div>
+    <div class="blogImage">
+        <img src="./img/4.jpg" >
+    </div>
+    <div class="title2">
+        <span id = 'tags' class="hideThisTag2">&nbsp;INFORMATION&nbsp;</span><br><br>
+
+        <span>CBSE CLASS 10 RESULTS DECLARED</span><br><br>
+        <p>
+            CBSE class 10th Result 2021 LIVE Updates: The Central Board of Secondary Education (CBSE) class 10 results declared.
+        </p>
+    </div>
+    
+</div>
+
+
+</div>
+</div> -->
+
+
+
+
+
+<div class="contactDiv" style="padding-top: 20px">
+    <a id="contact"></a>
+    <span class="title">Contact Me</span>
+    <div>
+        <a href="tel:+918986723344"><i class="fas fa-phone-alt" style="color:#1b1b35;padding-bottom: 10px;padding-top: 10px;"></i></a>  : +91 898 672 3344<br>
+        <a href="mailto:priyanshuk906@gmail.com"><i class="fa fa-envelope-open" style="color:#1b1b35;padding-bottom: 10px;"></i></i></a> : priyanshuk906@gmail.com<br>
+        <a href="https://www.instagram.com/priyanshu_kumar_sinha_/"><i class="fab fa-instagram"style="color:#1b1b35;padding-bottom: 10px;"></i></a>&nbsp;
+        <a href="https://www.facebook.com/priyanshukumar.sinha.927/"><i class="fab fa-facebook"style="color:#1b1b35;padding-bottom: 10px;"></i></a>&nbsp;
+        <a href="https://github.com/PriyanshuKumarSinha"><i class="fab fa-github"style="color:#1b1b35;padding-bottom: 10px;"></i></a></i>
+
+    </div>
+</div>
+
+<footer style="margin: 120px 0;font-size:13px; width: 100%;text-align: center;color: #69696b;">
+    <i class="far fa-copyright"style="font-size:10px" ></i>priyanshukmarsinha2021
+</footer>
+
+    <script src= "./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/0a6cf10e23.js" crossorigin="anonymous"></script>
+</body>
+</html>
